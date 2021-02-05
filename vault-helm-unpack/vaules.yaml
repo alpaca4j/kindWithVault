@@ -1,0 +1,17 @@
+# Vault Helm Chart Value Overrides
+global:
+  enabled: true
+  tlsDisable: true
+server:
+  dev:
+    enabled: true
+    devRootToken: "root"
+  extraVolumes:
+    - type: configMap
+      name: init
+      path: /vault/
+      defaultMode: 0777
+  postStart:
+    - /bin/sh
+    - -ec
+    - /vault/init/initK8sAuth.sh

@@ -1,0 +1,9 @@
+#/bin/sh
+sleep 10
+vault auth enable kubernetes
+vault write auth/kubernetes/config token_reviewer_jwt="${TOKEN_REVIEW_JWT}" kubernetes_host="https://$KUBERNETES_SERVICE_HOST:$KUBERNETES_SERVICE_PORT" kubernetes_ca_cert="${KUBE_CA_CERT}"
+echo "path \"*\"
+{
+  capabilities = [\"create\", \"read\", \"update\", \"delete\", \"list\", \"sudo\"]
+}" | vault policy write acl-all-admin -
+vault write auth/kubernetes/role/go-role bound_service_account_names=go-auth bound_service_account_namespaces=default policies=acl-all-admin
