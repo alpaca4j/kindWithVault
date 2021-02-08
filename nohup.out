@@ -1,0 +1,35 @@
+Forwarding from 127.0.0.1:8200 -> 8200
+Forwarding from 127.0.0.1:8443 -> 8443
+Forwarding from [::1]:8200 -> 8200
+Forwarding from [::1]:8443 -> 8443
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+E0206 10:42:28.416581   33576 portforward.go:233] lost connection to pod
+E0206 10:42:28.451950   33575 portforward.go:233] lost connection to pod
+Forwarding from 127.0.0.1:8200 -> 8200
+Forwarding from 127.0.0.1:8443 -> 8443
+Forwarding from [::1]:8200 -> 8200
+Forwarding from [::1]:8443 -> 8443
+
+(chrome:26082): Gtk-WARNING **: 08:02:41.164: Theme parsing error: gtk.css:1566:23: 'font-feature-settings' is not a valid property name
+
+(chrome:26082): Gtk-WARNING **: 08:02:41.169: Theme parsing error: gtk.css:3616:25: 'font-feature-settings' is not a valid property name
+
+(chrome:26082): Gtk-WARNING **: 08:02:41.170: Theme parsing error: gtk.css:4078:23: 'font-feature-settings' is not a valid property name
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8443
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
+Handling connection for 8200
