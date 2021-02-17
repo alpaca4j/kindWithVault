@@ -1,6 +1,6 @@
 #/bin/bash
 
-kind create cluster --name kind
+kind create cluster --name kind --config kind-config.yaml
 kubectl cluster-info --context kind-kind
 kubectl apply -f k8s_dashboard.yaml
 kubectl apply -f vault-namespace.yaml
